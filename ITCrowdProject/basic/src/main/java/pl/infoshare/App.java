@@ -1,8 +1,6 @@
 package pl.infoshare;
 
-import pl.infoshare.generators.AddressGenerator;
-import pl.infoshare.generators.RandomGenerator;
-import utils.*;
+import pl.infoshare.generators.Address;
 
 
 public class App 
@@ -29,10 +27,12 @@ public class App
 //        String fullName3 = RandomGenerator.generatorNames1()+" "+ RandomGenerator.generatorNames2();
 //        System.out.println(fullName3);
 
-        AddressGenerator ad = new AddressGenerator();
+        Address ad = new Address();
+        System.out.println(ad.getStreet());
+        System.out.println(ad.getCountry());
+        System.out.println(ad.getCity());
+        System.out.println(ad.getPostalCode());
 
-        System.out.println(ad.generateCityAddress());
-        System.out.println(ad.generateCountryAddress());
 
     }
 

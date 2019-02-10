@@ -25,4 +25,5 @@ public class RandomGenerator {
         return StringUtils.capitalize(text);
     }
 
+
  }
